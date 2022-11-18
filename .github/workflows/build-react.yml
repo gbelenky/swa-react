@@ -44,7 +44,7 @@ jobs:
     needs: build
     environment:
       name: staging
-      url: ${{ secrets.STAGINGURL }}
+      url: https://icy-hill-08f348503-staging.westeurope.2.azurestaticapps.net
     steps:
     - name: Download artifact
       uses: actions/download-artifact@v3
@@ -78,7 +78,7 @@ jobs:
     needs: deploy_staging
     environment:
       name: production
-      url: ${{ secrets.PRODUCTIONURL }}
+      url: https://icy-hill-08f348503.2.azurestaticapps.net
     steps:
     - name: Download artifact
       uses: actions/download-artifact@v3
