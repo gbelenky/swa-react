@@ -78,7 +78,7 @@ jobs:
     needs: deploy_staging
     environment:
       name: production
-      url: ${{ secrets.PRODUCTIONURL}}
+      url: ${{ secrets.PRODUCTIONURL }}
     steps:
     - name: Download artifact
       uses: actions/download-artifact@v3
