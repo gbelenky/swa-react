@@ -50,6 +50,9 @@ jobs:
         name: swa-artifact
         path: drop
         
+    - name : List Drop
+      run: ls -la drop
+        
     - name: Deploy To Staging
       id: deploystaging
       
