@@ -33,7 +33,22 @@ jobs:
     - name: Archive production artifacts
       uses: actions/upload-artifact@v3
       with:
-        name: dist-without-markdown
+        name: dist
         path: |
           build
           !build/**/*.md
+  
+  deploy_staging:
+  
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Download artifact
+      uses: actions/download-artifact@v3
+
+      with:
+        name: dist
+      
+     
+  
+  
