@@ -1,7 +1,7 @@
 import React from 'react';
 
 function App() {
-  const value = 'Multi-Stage with approvals';
+  const value = 'New clean version';
   return <div>Hello {value}</div>;
 }
 
