@@ -75,7 +75,7 @@ jobs:
   deploy_production:
   
     runs-on: ubuntu-latest
-    needs: build
+    needs: deploy_staging
     environment:
       name: production
       url: https://icy-hill-08f348503.2.azurestaticapps.net
