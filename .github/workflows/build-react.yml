@@ -48,7 +48,7 @@ jobs:
 
       with:
         name: swa-artifact
-        path: /drop
+        path: drop
       
      
   
